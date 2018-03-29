@@ -5,6 +5,9 @@ A repository for me to play around with react
 
 `yarn install`
 
-#### Start the app with webpack
+#### Start the app in dev mode with webpack
 
 `yarn start`
+
+#### Build the app
+`yarn build`
