@@ -1,0 +1,8 @@
+// Set font-size via the font-sizes map
+@mixin rp-font-size($font-size-key) {
+    @if map-has-key($rp-font-sizes, $font-size-key) == false {
+      @warn 'Could not find key `#{$font-size-key}` in `$rp-font-sizes` map.';
+    }
+  
+    font-size: map-get($rp-font-sizes, $font-size-key);
+  }

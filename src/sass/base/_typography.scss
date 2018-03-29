@@ -1,0 +1,54 @@
+// Responsive font sizing
+html {
+    font-size: map-get($rp-font-multipliers, default);
+  
+    @each $breakpoint in map-keys($rp-breakpoints) {
+      @include rp-respond-to($breakpoint) {
+        font-size: map-get($rp-font-multipliers, $breakpoint);
+      }
+    }
+  }
+  
+  // Core typography
+  body {
+    font-size: $rp-font-size;
+    font-weight: $rp-font-weight;
+    font-family: $rp-font-family;
+    line-height: $rp-line-height;
+  }
+  
+  // Heading typography
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: $rp-heading-font-family;
+    font-weight: $rp-heading-font-weight;
+    line-height: $rp-heading-line-height;
+  }
+  
+  h1 {
+    @include rp-font-size('xxl');
+  }
+  
+  h2 {
+    @include rp-font-size('xl');
+  }
+  
+  h3 {
+    @include rp-font-size('lg');
+  }
+  
+  h4 {
+    @include rp-font-size('md');
+  }
+  
+  h5 {
+    @include rp-font-size('sm');
+  }
+  
+  h6 {
+    @include rp-font-size('xs');
+  }

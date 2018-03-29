@@ -1,0 +1,35 @@
+$rp-spacing-unit-lg: 2rem !default;
+$rp-spacing-unit-sm: 0.5rem !default;
+$rp-spacing-unit-md: 1rem !default;
+$rp-spacing-unit-xs: 0.25rem !default;
+
+$rp-spacing-units: (
+  xs: $rp-spacing-unit-xs,
+  sm: $rp-spacing-unit-sm,
+  md: $rp-spacing-unit-md,
+  lg: $rp-spacing-unit-lg
+) !default;
+
+$rp-breakpoints: (
+  xs: 480px,
+  sm: 720px,
+  md: 960px,
+  lg: 1200px
+) !default;
+
+$rp-site-wrap-size: 70rem !default;
+
+$rp-offset-denominators: (
+  1, 2, 3, 4, 5, 6, 7, 8, 9, 10
+) !default;
+
+$rp-aspect-ratios: (
+  3: 2,
+  4: 3,
+  16: 9,
+) !default;
+
+$rp-layers: (
+  navbar: 1,
+  dialog: 2
+) !default;

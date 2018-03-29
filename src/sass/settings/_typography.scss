@@ -1,0 +1,26 @@
+$rp-font-size: 1rem !default;
+$rp-font-weight: 400 !default;
+$rp-font-family: arial !default;
+$rp-line-height: 1.3 !default;
+
+$rp-heading-font-family: Helvetica Neue, Calibri Light, Roboto,  sans-serif !default;
+$rp-heading-font-weight: 600 !default;
+$rp-heading-line-height: 1.5 !default;
+
+$rp-font-sizes: (
+  xxs: 80%,
+  xs: 90%,
+  sm: 100%,
+  md: 125%,
+  lg: 150%,
+  xl: 175%,
+  xxl: 200%
+) !default;
+
+$rp-font-multipliers: (
+  default: 90%,
+  xs: 90%,
+  sm: 100%,
+  md: 100%,
+  lg: 110%
+) !default;
