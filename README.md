@@ -11,3 +11,12 @@ A repository for me to play around with react
 
 #### Build the app
 `yarn build`
+
+#### Run the tests
+`yarn test`
+
+#### Run and watch the tests
+`yarn test-watch`
+
+#### Run the tests with coverage
+`yarn coverage`
