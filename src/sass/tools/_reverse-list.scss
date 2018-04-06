@@ -1,0 +1,7 @@
+@function rp-reverse-list($list) {
+    $reverse: ();
+    @each $value in $list {
+        $reverse: join(($value), $reverse);
+    }
+    @return $reverse;
+}

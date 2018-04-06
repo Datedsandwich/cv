@@ -1,20 +1,20 @@
 import React from 'react'
 import {shallow} from 'enzyme'
 
-import Card from '..'
+import Grid from '..'
 
-describe('components/card', () => {
-  it('should render a card', () => {
+describe('components/grid', () => {
+  it('should render a grid', () => {
     const $ = shallow(
-      <Card><span/></Card>
+      <Grid><span/></Grid>
     )
 
-    expect($.hasClass('rp-c-card')).toBe(true)
+    expect($.hasClass('rp-o-grid')).toBe(true)
   })
 
   it('should render its children', () => {
     const $ = shallow(
-      <Card><span/></Card>
+      <Grid><span/></Grid>
     )
 
     expect($.find('span').exists()).toBe(true)
@@ -22,7 +22,7 @@ describe('components/card', () => {
 
   it('should apply css classes', () => {
     const $ = shallow(
-      <Card className="test"><span/></Card>
+      <Grid className="test"><span/></Grid>
     )
 
     expect($.hasClass('test')).toBe(true)

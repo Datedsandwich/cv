@@ -1,0 +1,53 @@
+.rp-o-grid {
+  vertical-align: top;
+  min-width: 100%;
+  font-size: 0;
+}
+
+.rp-o-grid--gutter {
+  margin-left: -$rp-spacing-unit-md;
+}
+
+.rp-o-grid--gutter>.rp-o-grid__item {
+  padding-left: $rp-spacing-unit-md;
+}
+
+.rp-o-grid--trench {
+  margin-top: -$rp-spacing-unit-md;
+}
+
+.rp-o-grid--trench>.rp-o-grid__item {
+  padding-top: $rp-spacing-unit-md;
+}
+
+.rp-o-grid--align-top {
+  vertical-align: top;
+}
+
+.rp-o-grid--align-center {
+  vertical-align: middle;
+}
+
+.rp-o-grid--align-bottom {
+  vertical-align: bottom;
+}
+
+.rp-o-grid--match-height {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.rp-o-grid--match-height>.rp-o-grid__item {
+  display: flex;
+}
+
+.rp-o-grid__item {
+  position: relative;
+  vertical-align: inherit;
+  display: inline-block;
+  min-height: 1px;
+  width: 100%;
+  // Whitespace Fix
+  margin-left: -1px;
+  font-size: $rp-font-size;
+}

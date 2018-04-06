@@ -12,7 +12,9 @@ module.exports = {
         contentBase: "./dist"
     },
     resolve: {
-        modules: ['src', 'node_modules'],
+        modules: [
+            'src', 'node_modules'
+        ],
         extensions: ['.js', '.jsx', '.scss']
     },
     module: {
@@ -23,18 +25,20 @@ module.exports = {
                 use: {
                     loader: "babel-loader"
                 }
-            },
-            {
+            }, {
                 test: /\.html$/,
                 use: [
                     {
                         loader: "html-loader"
                     }
                 ]
-            },
-            {
+            }, {
                 test: /\.(s*)css$/,
                 use: [MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader']
+            }, {
+                test: /\.(jpe?g|png|gif)$/i,
+                exclude: /node_modules/,
+                loader: 'file-loader'
             }
         ]
     },
@@ -51,11 +55,7 @@ module.exports = {
         }
     },
     plugins: [
-        new MiniCssExtractPlugin({
-            filename: "[name].css",
-        }),
-        new HtmlWebPackPlugin({
-            template: "./src/index.html"
-        })
+        new MiniCssExtractPlugin({filename: "[name].css"}),
+        new HtmlWebPackPlugin({template: "./src/index.html"})
     ]
 };
