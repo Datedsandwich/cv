@@ -29,6 +29,10 @@
   align-items: flex-end;
 }
 
+.lr-o-grid--match-height>.lr-o-grid__item {
+  display: flex;
+}
+
 .lr-o-grid__item {
   width: 100%;
 }
