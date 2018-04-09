@@ -9,7 +9,7 @@ module.exports = {
         filename: "[name].js"
     },
     devServer: {
-        contentBase: "./dist"
+        contentBase: "./"
     },
     resolve: {
         modules: [

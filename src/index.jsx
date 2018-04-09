@@ -11,7 +11,7 @@ function Application() {
         <Card className="lr-c-card--dark">
             <Grid className="lr-o-grid--gutter lr-o-grid--trench">
                 <GridItem className="lr-u-1/3@md">
-                    <img className="lr-u-fill-width" src={require('images/horse_mask.jpg')}></img>
+                    <img className="lr-u-fill-width" src="/assets/images/horse_mask.jpg"></img>
                 </GridItem>
                 <GridItem className="lr-u-1/3@md">
                     <h1>Hello</h1>
