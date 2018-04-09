@@ -1,5 +1,5 @@
-# react-playground
-A repository for me to play around with react
+# Luke Robinson CV
+A site to act as an online CV, and also to allow me to play around a bit with React and Webpack.
 
 #### Installing dependencies
 
