@@ -11,10 +11,10 @@ function Application() {
         <Card className="lr-c-card--dark">
             <Grid className="lr-o-grid--spaced">
                 <GridItem className="lr-u-1/3@md">
-                    <img className="lr-u-fill-width" src="/assets/images/horse_mask.jpg"></img>
+                    <img className="lr-u-fill-width" src={require('assets/images/horse_mask.jpg')}></img>
                 </GridItem>
                 <GridItem className="lr-u-1/3@md">
-                    <h1>TEST</h1>
+                    <h1>Hello</h1>
                     <p>I am a Software Developer and Game Developer. I've worked as a Gameplay
                         Programmer, and also as a Full Stack Web Developer. I've used C#, Java, and
                         JavaScript, alongside Unity, XNA/MonoGame, Angularjs, React, and Dropwizard.</p>

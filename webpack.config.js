@@ -9,8 +9,7 @@ module.exports = {
         filename: "[name].js"
     },
     devServer: {
-        index: "./index.html",
-        publicPath: path.resolve(__dirname, "docs")
+        contentBase: "./docs"
     },
     resolve: {
         modules: [
