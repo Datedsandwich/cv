@@ -5,11 +5,12 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 module.exports = {
     entry: ["./src/index.jsx"],
     output: {
-        path: path.resolve(__dirname, "dist"),
+        path: path.resolve(__dirname, "docs"),
         filename: "[name].js"
     },
     devServer: {
-        contentBase: "./"
+        index: "./index.html",
+        publicPath: path.resolve(__dirname, "docs")
     },
     resolve: {
         modules: [
@@ -56,6 +57,6 @@ module.exports = {
     },
     plugins: [
         new MiniCssExtractPlugin({filename: "[name].css"}),
-        new HtmlWebPackPlugin({template: "./src/index.html", filename: "../index.html"})
+        new HtmlWebPackPlugin({template: "./src/index.html"})
     ]
 };

@@ -1,52 +1,34 @@
 .lr-o-grid {
-  min-width: 100%;
-  padding: 0;
-  margin: 0;
-  vertical-align: top;
-  list-style: none;
-  font-size: 0;
-  letter-spacing: 0;
-}
-
-.lr-o-grid--gutter {
-  margin-left: -$lr-spacing-unit;
-}
-
-.lr-o-grid--gutter>.lr-o-grid__item {
-  padding-left: $lr-spacing-unit;
-}
-
-.lr-o-grid--trench {
-  margin-top: -$lr-spacing-unit;
-}
-
-.lr-o-grid--trench>.lr-o-grid__item {
-  padding-top: $lr-spacing-unit;
-}
-
-.lr-o-grid--align-center {
-  vertical-align: middle;
-}
-
-.lr-o-grid--align-bottom {
-  vertical-align: bottom;
-}
-
-.lr-o-grid--match-height {
   display: flex;
   flex-wrap: wrap;
 }
 
-.lr-o-grid--match-height>.lr-o-grid__item {
-  display: flex;
+.lr-o-grid__item {
+  position: relative;
+}
+
+.lr-o-grid--spaced {
+  margin-left: -$lr-spacing-unit;
+  margin-top: -$lr-spacing-unit;
+}
+
+.lr-o-grid--spaced>.lr-o-grid__item {
+  padding-left: $lr-spacing-unit;
+  padding-top: $lr-spacing-unit;
+}
+
+.lr-o-grid--center {
+  justify-content: center;
+}
+
+.lr-o-grid--valign-center {
+  align-items: center;
+}
+
+.lr-o-grid--valign-bottom {
+  align-items: flex-end;
 }
 
 .lr-o-grid__item {
-  position: relative;
-  vertical-align: inherit;
-  display: inline-block;
-  min-height: 1px;
   width: 100%;
-  font-size: $lr-font-size;
-  letter-spacing: $lr-letter-spacing;
 }
