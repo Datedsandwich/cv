@@ -1,4 +1,4 @@
-@function rp-reverse-list($list) {
+@function lr-reverse-list($list) {
     $reverse: ();
     @each $value in $list {
         $reverse: join(($value), $reverse);

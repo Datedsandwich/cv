@@ -1,20 +1,21 @@
 // Responsive font sizing
 html {
-    font-size: map-get($rp-font-multipliers, default);
+    font-size: map-get($lr-font-multipliers, default);
   
-    @each $breakpoint in map-keys($rp-breakpoints) {
-      @include rp-respond-to($breakpoint) {
-        font-size: map-get($rp-font-multipliers, $breakpoint);
+    @each $breakpoint in map-keys($lr-breakpoints) {
+      @include lr-respond-to($breakpoint) {
+        font-size: map-get($lr-font-multipliers, $breakpoint);
       }
     }
   }
   
   // Core typography
   body {
-    font-size: $rp-font-size;
-    font-weight: $rp-font-weight;
-    font-family: $rp-font-family;
-    line-height: $rp-line-height;
+    font-size: $lr-font-size;
+    font-weight: $lr-font-weight;
+    font-family: $lr-font-family;
+    line-height: $lr-line-height;
+    letter-spacing: $lr-letter-spacing;
   }
   
   // Heading typography
@@ -24,31 +25,31 @@ html {
   h4,
   h5,
   h6 {
-    font-family: $rp-heading-font-family;
-    font-weight: $rp-heading-font-weight;
-    line-height: $rp-heading-line-height;
+    font-family: $lr-heading-font-family;
+    font-weight: $lr-heading-font-weight;
+    line-height: $lr-heading-line-height;
   }
   
   h1 {
-    @include rp-font-size('xxl');
+    @include lr-font-size('xxl');
   }
   
   h2 {
-    @include rp-font-size('xl');
+    @include lr-font-size('xl');
   }
   
   h3 {
-    @include rp-font-size('lg');
+    @include lr-font-size('lg');
   }
   
   h4 {
-    @include rp-font-size('md');
+    @include lr-font-size('md');
   }
   
   h5 {
-    @include rp-font-size('sm');
+    @include lr-font-size('sm');
   }
   
   h6 {
-    @include rp-font-size('xs');
+    @include lr-font-size('xs');
   }

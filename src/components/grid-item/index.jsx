@@ -1,18 +1,18 @@
 import React from 'react'
 import T from 'prop-types'
 
-const Grid = ({children, className}) => <div className={`lr-o-grid ${className}`}>
+const GridItem = ({children, className}) => <div className={`lr-o-grid__item ${className}`}>
     {children}
 </div>
 
-Grid.propTypes = {
+GridItem.propTypes = {
     children: T.node,
     className: T.string
 }
 
-Grid.defaultProps = {
+GridItem.defaultProps = {
     children: null,
     className: ''
 }
 
-export default Grid;
+export default GridItem;

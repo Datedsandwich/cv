@@ -2,7 +2,7 @@
 
 // Flexible reponsive utility. Feed it a breakpoint as a map breakpoint or a pixel
 // For example all the following are valid breakpoints: sm, max-sm, 300px, max-300px
-@mixin rp-respond-to($breakpoint) {
+@mixin lr-respond-to($breakpoint) {
     // Assertain type and sanitise
     $px-index: str-index($breakpoint, 'px');
     $max-index: str-index($breakpoint, 'max-');
@@ -16,11 +16,11 @@
         $key: str-slice($breakpoint, 5);
       }
   
-      @if map-has-key($rp-breakpoints, $key) == false {
-        @warn 'Could not find key `#{$key}` in `$rp-breakpoints` map.';
+      @if map-has-key($lr-breakpoints, $key) == false {
+        @warn 'Could not find key `#{$key}` in `$lr-breakpoints` map.';
       }
   
-      $width: #{map-get($rp-breakpoints, $key)};
+      $width: #{map-get($lr-breakpoints, $key)};
     }
     @else if $max-index != null { // its a max pixel width
       $width: str-slice($breakpoint, 5);

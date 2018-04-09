@@ -1,18 +1,18 @@
 /* Generate non responsive widths first, responsive widths have more weight */
 
 @for $i from 1 through 10 {
-    @include rp-generate-width-fraction-classes($i);
+    @include lr-generate-width-fraction-classes($i);
 }
 
-$breakpoint-keys: map-keys($rp-breakpoints);
-$reverse-breakpoint-keys: rp-reverse-list($breakpoint-keys);
+$breakpoint-keys: map-keys($lr-breakpoints);
+$reverse-breakpoint-keys: lr-reverse-list($breakpoint-keys);
 /* Need to min-width responsive classes smallest first to ensure the largest responsive size class takes precedent */
 
 @each $breakpoint in $reverse-breakpoint-keys {
-    @include rp-respond-to('#{$breakpoint}') {
+    @include lr-respond-to('#{$breakpoint}') {
         $extension: \@#{$breakpoint};
         @for $i from 1 through 10 {
-            @include rp-generate-width-fraction-classes($i, $extension);
+            @include lr-generate-width-fraction-classes($i, $extension);
         }
     }
 }
@@ -20,10 +20,10 @@ $reverse-breakpoint-keys: rp-reverse-list($breakpoint-keys);
 /* Need to min-width responsive classes largest first to ensure the smallest responsive size class takes precedent */
 
 @each $breakpoint in $breakpoint-keys {
-    @include rp-respond-to('max-#{$breakpoint}') {
+    @include lr-respond-to('max-#{$breakpoint}') {
         $extension: \@max-#{$breakpoint};
         @for $i from 1 through 10 {
-            @include rp-generate-width-fraction-classes($i, $extension);
+            @include lr-generate-width-fraction-classes($i, $extension);
         }
     }
 }

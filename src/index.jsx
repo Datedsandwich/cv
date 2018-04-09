@@ -4,21 +4,22 @@ import 'sass/main.scss';
 
 import Card from 'components/card';
 import Grid from 'components/grid';
+import GridItem from 'components/grid-item';
 
 function Application() {
     return (
-        <Card className="rp-c-card--dark">
-            <Grid className="rp-o-grid--gutter rp-o-grid--trench">
-                <div className="rp-o-grid__item rp-u-1/3@md">
-                    <img className="rp-u-fill-width" src={require('images/horse_mask.jpg')}></img>
-                </div>
-                <div className="rp-o-grid__item rp-u-1/3@md">
+        <Card className="lr-c-card--dark">
+            <Grid className="lr-o-grid--gutter lr-o-grid--trench">
+                <GridItem className="lr-u-1/3@md">
+                    <img className="lr-u-fill-width" src={require('images/horse_mask.jpg')}></img>
+                </GridItem>
+                <GridItem className="lr-u-1/3@md">
                     <h1>Hello</h1>
                     <p>I am a Software Developer and Game Developer. I've worked as a Gameplay
-                        Programmer, as also as a Full Stack Web Developer. I've used C#, Java, and
+                        Programmer, and also as a Full Stack Web Developer. I've used C#, Java, and
                         JavaScript, alongside Unity, XNA/MonoGame, Angularjs, React, and Dropwizard.</p>
-                </div>
-                <div className="rp-o-grid__item rp-u-1/3@md">
+                </GridItem>
+                <GridItem className="lr-u-1/3@md">
                     <h3>Available For:</h3>
                     <ul>
                         <li>Front-End Web Development</li>
@@ -26,7 +27,7 @@ function Application() {
                         <li>Gameplay Programming</li>
                         <li>Unity Development</li>
                     </ul>
-                </div>
+                </GridItem>
             </Grid>
         </Card>
     );

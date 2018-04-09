@@ -1,7 +1,7 @@
 import React from 'react'
 import T from 'prop-types'
 
-const Card = ({children, className}) => <div className={`rp-c-card ${className}`}>
+const Card = ({children, className}) => <div className={`lr-c-card ${className}`}>
   {children}
 </div>
 

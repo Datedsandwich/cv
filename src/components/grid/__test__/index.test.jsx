@@ -9,7 +9,7 @@ describe('components/grid', () => {
       <Grid><span/></Grid>
     )
 
-    expect($.hasClass('rp-o-grid')).toBe(true)
+    expect($.hasClass('lr-o-grid')).toBe(true)
   })
 
   it('should render its children', () => {

@@ -1,13 +1,14 @@
-$rp-font-size: 1rem !default;
-$rp-font-weight: 400 !default;
-$rp-font-family: arial !default;
-$rp-line-height: 1.3 !default;
+$lr-font-size: 1rem !default;
+$lr-font-weight: 400 !default;
+$lr-font-family: arial !default;
+$lr-line-height: 1.3 !default;
+$lr-letter-spacing: normal !default;
 
-$rp-heading-font-family: Helvetica Neue, Calibri Light, Roboto,  sans-serif !default;
-$rp-heading-font-weight: 600 !default;
-$rp-heading-line-height: 1.5 !default;
+$lr-heading-font-family: Helvetica Neue, Calibri Light, Roboto,  sans-serif !default;
+$lr-heading-font-weight: 600 !default;
+$lr-heading-line-height: 1.5 !default;
 
-$rp-font-sizes: (
+$lr-font-sizes: (
   xxs: 80%,
   xs: 90%,
   sm: 100%,
@@ -17,7 +18,7 @@ $rp-font-sizes: (
   xxl: 200%
 ) !default;
 
-$rp-font-multipliers: (
+$lr-font-multipliers: (
   default: 90%,
   xs: 90%,
   sm: 100%,
