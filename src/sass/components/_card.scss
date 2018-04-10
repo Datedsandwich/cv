@@ -6,6 +6,15 @@
 }
 
 .lr-c-card--dark {
+    border: 1px solid darken($color-dark, 20%);
+
     background-color: $color-dark;
     color: $color-light;
+}
+
+.lr-c-card--grey {
+    border: 1px solid darken($color-grey, 20%);
+
+    background-color: $color-grey;
+    color: $color-dark;
 }
