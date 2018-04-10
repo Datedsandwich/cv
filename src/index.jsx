@@ -9,6 +9,7 @@ import Navbar from 'components/navbar';
 function Application() {
     return (
         <div>
+            
             <Navbar/>
             <div className="lr-o-site-wrap">
                 <Grid.Wrapper className="lr-o-grid--spaced">
