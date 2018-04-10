@@ -588,12 +588,12 @@ h6 {
   color: #343a40; }
 
 .lr-c-navbar {
-  height: 63px;
+  height: 70px;
   position: relative;
   z-index: 1; }
 
 .lr-c-navbar__inner {
-  height: 63px;
+  height: 70px;
   position: fixed;
   background-color: #343a40; }
 
@@ -610,7 +610,7 @@ h6 {
       position: fixed;
       max-height: 0;
       width: 100%;
-      top: 63px;
+      top: 70px;
       left: 0px;
       transition: all 0.3s ease-in;
       overflow-y: hidden; } }
@@ -630,7 +630,7 @@ h6 {
 .lr-c-navbar__toggle {
   float: right;
   display: block;
-  height: 63px;
+  height: 70px;
   padding: 1rem;
   background-color: #343a40;
   cursor: pointer; }
@@ -640,7 +640,7 @@ h6 {
 
 .lr-c-navbar__overlay {
   position: fixed;
-  top: 63px;
+  top: 70px;
   bottom: 0;
   left: 0;
   right: 0;

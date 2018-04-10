@@ -27,7 +27,7 @@ class Navbar extends React.Component {
             <nav className={`lr-c-navbar lr-u-hard-bottom ${this.state.isOpen ? 'is-open' : ''}`}>
                 <div className="lr-c-navbar__inner">
                     <button className="lr-c-navbar__overlay" onClick={this.close}></button>
-                    <Flag.Wrapper>
+                    <Flag.Wrapper className="lr-u-fill-height">
                         <Flag.Component>
                             <div className="lr-c-navbar__brand">
                                 <span className="lr-c-navbar__item">Luke Robinson</span>
