@@ -393,6 +393,39 @@ template {
   box-sizing: border-box; }
 
 html {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+dl,
+dd,
+ol,
+ul,
+form,
+fieldset,
+legend,
+table,
+figure,
+th,
+td,
+caption,
+hr {
+  margin: 0;
+  padding: 0; }
+
+button {
+  border: 0;
+  padding: 0; }
+
+html {
   font-size: 90%; }
   @media (min-width: 480px) {
     html {
@@ -442,6 +475,21 @@ h5 {
 h6 {
   font-size: 90%; }
 
+.lr-o-flag {
+  display: table;
+  width: 100%; }
+
+:not([class^='lr-o-flag@']) > .lr-o-flag__component,
+:not([class^='lr-o-flag@']) > .lr-o-flag__body {
+  display: table-cell; }
+
+.lr-o-flag__component,
+.lr-o-flag__body {
+  vertical-align: middle; }
+
+.lr-o-flag__body {
+  width: 100%; }
+
 .lr-o-grid {
   display: flex;
   flex-wrap: wrap; }
@@ -472,6 +520,54 @@ h6 {
 .lr-o-grid__item {
   width: 100%; }
 
+.lr-o-list {
+  display: flex;
+  flex-direction: column; }
+
+.lr-o-list--inline {
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+@media (min-width: 480px) {
+  .lr-o-list--inline\@xs {
+    flex-wrap: wrap; } }
+
+@media (min-width: 720px) {
+  .lr-o-list--inline\@sm {
+    flex-wrap: wrap; } }
+
+@media (min-width: 960px) {
+  .lr-o-list--inline\@md {
+    flex-wrap: wrap; } }
+
+@media (min-width: 1200px) {
+  .lr-o-list--inline\@lg {
+    flex-wrap: wrap; } }
+
+@media (min-width: 1200px) {
+  .lr-o-list--inline\@max-lg {
+    flex-wrap: wrap; } }
+
+@media (min-width: 960px) {
+  .lr-o-list--inline\@max-md {
+    flex-wrap: wrap; } }
+
+@media (min-width: 720px) {
+  .lr-o-list--inline\@max-sm {
+    flex-wrap: wrap; } }
+
+@media (min-width: 480px) {
+  .lr-o-list--inline\@max-xs {
+    flex-wrap: wrap; } }
+
+.lr-o-list--bare {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
 .lr-o-site-wrap {
   max-width: 70rem;
   margin: 0 auto; }
@@ -482,14 +578,116 @@ h6 {
   background-color: #fff; }
 
 .lr-c-card--dark {
+  border: 1px solid #060708;
   background-color: #343a40;
   color: #fff; }
+
+.lr-c-card--grey {
+  border: 1px solid #a0a0a0;
+  background-color: #d3d3d3;
+  color: #343a40; }
+
+.lr-c-navbar {
+  height: 63px;
+  position: relative;
+  z-index: 1; }
+
+.lr-c-navbar__inner {
+  height: 63px;
+  position: fixed;
+  background-color: #343a40; }
+
+.lr-c-navbar__brand {
+  display: inline;
+  padding: 1rem;
+  white-space: nowrap;
+  font-size: 150%; }
+
+.lr-c-navbar__links {
+  float: right; }
+  @media (max-width: 720px) {
+    .lr-c-navbar__links {
+      position: fixed;
+      max-height: 0;
+      width: 100%;
+      top: 63px;
+      left: 0px;
+      transition: all 0.3s ease-in;
+      overflow-y: hidden; } }
+
+.lr-c-navbar__item {
+  display: inline-block;
+  padding: 1rem;
+  text-decoration: none;
+  color: #fff;
+  text-align: center; }
+
+@media (max-width: 720px) {
+  .lr-c-navbar__links > .lr-c-navbar__item {
+    display: block;
+    width: 100%; } }
+
+.lr-c-navbar__toggle {
+  float: right;
+  display: block;
+  height: 63px;
+  padding: 1rem;
+  background-color: #343a40;
+  cursor: pointer; }
+  @media (min-width: 720px) {
+    .lr-c-navbar__toggle {
+      display: none; } }
+
+.lr-c-navbar__overlay {
+  position: fixed;
+  top: 63px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 0;
+  width: 100%;
+  background-color: #343a40;
+  opacity: 0.8;
+  transition: all 0.3s ease-in; }
+
+@media (max-width: 720px) {
+  .lr-c-navbar.is-open .lr-c-navbar__overlay {
+    height: 100%; } }
+
+@media (max-width: 720px) {
+  .lr-c-navbar.is-open .lr-c-navbar__links {
+    max-height: 100%;
+    overflow-y: auto; } }
+
+.lr-c-navbar__item:hover,
+.lr-c-navbar__toggle:hover {
+  color: #cccccc;
+  cursor: pointer; }
+
+.lr-c-navbar__item:active,
+.lr-c-navbar__toggle:active {
+  color: #e6e6e6; }
 
 .lr-u-fill-height {
   height: 100%; }
 
 .lr-u-fill-width {
   width: 100%; }
+
+.lr-u-hard-bottom {
+  margin-bottom: 1rem; }
+
+.lr-u-soft {
+  padding: 1rem; }
+
+.lr-u-soft-bottom {
+  padding-bottom: 1rem; }
+
+.lr-u-soft-left {
+  padding-left: 1rem; }
+
+.lr-u-text-align-center {
+  text-align: center; }
 
 /* Generate non responsive widths first, responsive widths have more weight */
 .lr-u-1\/1 {

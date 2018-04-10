@@ -15,9 +15,6 @@ function Application() {
                     <Grid.Item>
                         <Card className="lr-c-card--grey">
                             <Grid.Wrapper className="lr-o-grid--spaced">
-                                <Grid.Item className="lr-u-1/3@lg lr-u-1/2@md">
-                                    <img className="lr-u-fill-width" src={require('assets/images/horse_mask.jpg')}></img>
-                                </Grid.Item>
                                 <Grid.Item className="lr-u-2/3@lg lr-u-1/2@md lr-u-soft-left">
                                     <Grid.Wrapper className="lr-o-grid--spaced">
                                         <Grid.Item>
@@ -34,15 +31,29 @@ function Application() {
                                         </Grid.Item>
                                     </Grid.Wrapper>
                                 </Grid.Item>
+                                <Grid.Item className="lr-u-1/3@lg lr-u-1/2@md">
+                                    <img className="lr-u-fill-width" src={require('assets/images/horse_mask.jpg')}></img>
+                                </Grid.Item>
                             </Grid.Wrapper>
                         </Card>
                     </Grid.Item>
                     <Grid.Item>
-                        <Card className="lr-c-card--grey lr-u-soft lr-u-text-align-center">
-                            <h1>Hello!</h1>
-                            <p>I am a Software Developer and Game Developer. I've worked as a Gameplay
+                        <Card className="lr-c-card--grey">
+                            <h1 className="lr-u-text-align-center">Hello!</h1>
+                            <p className="lr-u-soft-bottom">
+                                I am a Software Developer and Game Developer. I've worked as a Gameplay
                                 Programmer, and also as a Full Stack Web Developer. I've used C#, Java, and
-                                JavaScript, alongside Unity, XNA/MonoGame, Angularjs, React, and Dropwizard.</p>
+                                JavaScript, alongside Unity, XNA/MonoGame, Angularjs, React, and Dropwizard.
+                            </p>
+                            <p className="lr-u-soft-bottom">
+                                I am currently seeking a role in the Games Industry. I have an interest in
+                                gameplay programming, but am more than capable on the UI or back-end of a game
+                                also.
+                            </p>
+                            <p>
+                                I've also got some interest in web, as you can see by looking at this page! It's
+                                responsive, too!
+                            </p>
                         </Card>
                     </Grid.Item>
                 </Grid.Wrapper>
