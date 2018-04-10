@@ -1,11 +1,11 @@
 .lr-c-card {
-    border: 1px solid darken($lr-color-light, 20%);
+    border: 1px solid darken($color-light, 20%);
     padding: $lr-spacing-unit;
 
-    background-color: $lr-color-light;
+    background-color: $color-light;
 }
 
 .lr-c-card--dark {
-    background-color: $lr-color-dark;
-    color: $lr-color-light;
+    background-color: $color-dark;
+    color: $color-light;
 }
