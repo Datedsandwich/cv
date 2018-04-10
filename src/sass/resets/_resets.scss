@@ -5,3 +5,40 @@
         box-sizing: border-box;
     }
 }
+
+html {
+    // Better font rendering.
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+dl,
+dd,
+ol,
+ul,
+form,
+fieldset,
+legend,
+table,
+figure,
+th,
+td,
+caption,
+hr {
+    margin: 0;
+    padding: 0;
+}
+
+button {
+    border: 0;
+    padding: 0;
+}
