@@ -28,7 +28,7 @@ function Application() {
                                 </Grid.Item>
                                 <Grid.Item className="lr-u-1/2@xs">
                                     <h3>Available For:</h3>
-                                    <ul>
+                                    <ul className="lr-o-list lr-o-list--bare">
                                         <li>Front-End Web Development</li>
                                         <li>Back-End Web Development</li>
                                         <li>Gameplay Programming</li>
