@@ -31,17 +31,22 @@ function ContactInfoPanel() {
                         <div className="lr-c-contact-info-panel__social-media-buttons">
                             <ul className="lr-o-list lr-o-list--inline">
                                 <li>
-                                    <a href="#">
+                                    <a href="https://github.com/Datedsandwich">
                                         <i className="lr-c-icon fa fa-github"></i>
                                     </a>
                                 </li>
                                 <li className="lr-u-soft-left">
-                                    <a href="#">
+                                    <a href="https://www.linkedin.com/in/luke-robinson-82b3a698/">
                                         <i className="lr-c-icon fa fa-linkedin"></i>
                                     </a>
                                 </li>
                                 <li className="lr-u-soft-left">
-                                    <a href="#">
+                                    <a href="https://twitter.com/Datedsandwich">
+                                        <i className="lr-c-icon fa fa-twitter"></i>
+                                    </a>
+                                </li>
+                                <li className="lr-u-soft-left">
+                                    <a href="https://www.facebook.com/datedsandwich">
                                         <i className="lr-c-icon fa fa-facebook"></i>
                                     </a>
                                 </li>
