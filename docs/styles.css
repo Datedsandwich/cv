@@ -425,21 +425,6 @@ button {
   border: 0;
   padding: 0; }
 
-html {
-  font-size: 90%; }
-  @media (min-width: 480px) {
-    html {
-      font-size: 90%; } }
-  @media (min-width: 720px) {
-    html {
-      font-size: 100%; } }
-  @media (min-width: 960px) {
-    html {
-      font-size: 100%; } }
-  @media (min-width: 1200px) {
-    html {
-      font-size: 110%; } }
-
 body {
   font-size: 1rem;
   font-weight: 400;
@@ -474,6 +459,26 @@ h5 {
 
 h6 {
   font-size: 90%; }
+
+.fa {
+  width: 50px;
+  border-radius: 50%; }
+
+.fa-facebook {
+  background: #3b5998;
+  color: white; }
+
+.fa-github {
+  background-color: #333;
+  color: white; }
+
+.fa-linkedin {
+  background-color: #007bb5;
+  color: white; }
+
+.fa-twitter {
+  background: #55acee;
+  color: white; }
 
 .lr-o-flag {
   display: table;
@@ -586,6 +591,24 @@ h6 {
   border: 1px solid #a0a0a0;
   background-color: #d3d3d3;
   color: #343a40; }
+
+.lr-c-contact-info-panel {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: space-between;
+  align-content: flex-start; }
+
+.lr-c-contact-info-panel__social-media-buttons {
+  align-self: center; }
+
+.lr-c-icon {
+  padding: 1rem;
+  text-align: center;
+  text-decoration: none; }
+
+.fa:hover {
+  opacity: 0.7; }
 
 .lr-c-navbar {
   height: 70px;

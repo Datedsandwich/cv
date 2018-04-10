@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-import Flag from 'components/Flag';
+import Flag from 'components/layout/flag';
 
 class Navbar extends React.Component {
     constructor(props) {
