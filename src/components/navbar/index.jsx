@@ -24,10 +24,7 @@ class Navbar extends React.Component {
 
     render() {
         return (
-            <nav
-                className={`lr-c-navbar lr-u-hard-bottom ${this.state.isOpen
-                ? 'is-open'
-                : ''}`}>
+            <nav className={`lr-c-navbar lr-u-hard-bottom ${this.state.isOpen ? 'is-open' : ''}`}>
                 <div className="lr-c-navbar__inner">
                     <button className="lr-c-navbar__overlay" onClick={this.close}></button>
                     <Flag.Wrapper>
