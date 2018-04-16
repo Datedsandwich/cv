@@ -41,7 +41,11 @@ class Education extends React.Component {
     }
 
     render() {
-        return <ExperiencePanel title='Education' experiences={this.state.experiences}/>
+        return (
+            <div id='education'>
+                <ExperiencePanel title='Education' experiences={this.state.experiences}/>
+            </div>
+        )
     }
 }
 
