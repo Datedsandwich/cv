@@ -605,11 +605,9 @@ h6 {
 
 .lr-c-experience__left {
   padding-right: 1rem;
-  border-left: 2px solid #343a40;
   text-align: end; }
   @media (max-width: 720px) {
     .lr-c-experience__left {
-      border-left: 0;
       text-align: start; } }
 
 .lr-c-experience__right {
