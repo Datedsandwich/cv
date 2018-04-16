@@ -8,6 +8,7 @@ module.exports = {
         path: path.resolve(__dirname, "docs"),
         filename: "[name].js"
     },
+    devtool: 'source-map',
     devServer: {
         contentBase: "./docs"
     },
@@ -41,7 +42,7 @@ module.exports = {
             }, {
                 test: /\.(jpe?g|png|gif)$/i,
                 exclude: /node_modules/,
-                loader: 'file-loader'
+                loader: 'file-loader?name=[name].[hash].[ext]'
             }
         ]
     },
