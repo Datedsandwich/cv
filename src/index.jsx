@@ -7,7 +7,8 @@ import Grid from 'components/layout/grid';
 import Navbar from 'components/organisms/navbar';
 import ContactInfoPanel from 'components/organisms/contact-info-panel';
 import PersonalStatementPanel from 'components/organisms/personal-statement-panel';
-import ExperiencePanel from 'components/organisms/experience-panel';
+import WorkExperience from 'components/organisms/work-experience';
+import Education from 'components/organisms/education';
 
 function Application() {
     return (
@@ -22,7 +23,10 @@ function Application() {
                         <PersonalStatementPanel/>
                     </Grid.Item>
                     <Grid.Item>
-                        <ExperiencePanel/>
+                        <WorkExperience/>
+                    </Grid.Item>
+                    <Grid.Item>
+                        <Education />
                     </Grid.Item>
                 </Grid.Wrapper>
             </div>

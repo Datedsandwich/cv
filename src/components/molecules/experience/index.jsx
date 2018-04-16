@@ -16,7 +16,7 @@ function Experience(props) {
                 <p className='lr-c-experience__subtitle'>{props.subtitle}</p>
             </Grid.Item>
             <Grid.Item className='lr-c-experience__right lr-u-1/2@sm'>
-                <p className='lr-c-experience__text-body'>{props.text}</p>
+                <div className='lr-c-experience__text-body'>{props.body}</div>
             </Grid.Item>
         </Grid.Wrapper>
     )
@@ -26,7 +26,7 @@ Experience.propTypes = {
     timeframe: T.string.isRequired,
     title: T.string.isRequired,
     subtitle: T.string.isRequired,
-    text: T.string.isRequired
+    body: T.node.isRequired
 }
 
 export default Experience;

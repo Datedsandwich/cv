@@ -14,7 +14,7 @@ describe('components/molecules/experience', () => {
             timeframe={timeframe}
             title={title}
             subtitle={subtitle}
-            text={textBody}/>)
+            body={textBody}/>)
 
         expect($.find('.lr-c-experience__timeframe').text()).toEqual(timeframe);
         expect($.find('.lr-c-experience__title').text()).toEqual(title);

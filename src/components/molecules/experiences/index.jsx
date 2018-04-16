@@ -7,12 +7,15 @@ function Experiences(props) {
     return props
         .values
         .map((value) => {
-            return (<Experience
-                timeframe={value.timeframe}
-                title={value.title}
-                subtitle={value.subtitle}
-                text={value.text}
-                key={value.key}/>)
+            return (
+                <div className='lr-u-soft-bottom' key={value.key}>
+                    <Experience
+                        timeframe={value.timeframe}
+                        title={value.title}
+                        subtitle={value.subtitle}
+                        body={value.body}/>
+                </div>
+            )
         })
 }
 
