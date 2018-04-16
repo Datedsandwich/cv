@@ -1,9 +1,7 @@
 .lr-c-experience__left {
     padding-right: $lr-spacing-unit;
-    border-left: 2px solid $color-dark;
     text-align: end;
     @include lr-respond-to('max-sm') {
-        border-left: 0;
         text-align: start;
     }
 }
