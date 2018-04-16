@@ -575,7 +575,8 @@ h6 {
 
 .lr-o-site-wrap {
   max-width: 70rem;
-  margin: 0 auto; }
+  margin: 0 auto;
+  padding-bottom: 1rem; }
 
 .lr-c-card {
   border: 1px solid #cccccc;
@@ -601,6 +602,20 @@ h6 {
 
 .lr-c-contact-info-panel__social-media-buttons {
   align-self: center; }
+
+.lr-c-experience__left {
+  padding-right: 1rem;
+  text-align: end; }
+  @media (max-width: 720px) {
+    .lr-c-experience__left {
+      text-align: start; } }
+
+.lr-c-experience__right {
+  padding-left: 1rem;
+  text-align: start; }
+  @media (max-width: 720px) {
+    .lr-c-experience__right {
+      padding-left: 0; } }
 
 .lr-c-icon {
   padding: 1rem;
@@ -1776,3 +1791,5 @@ h6 {
   .lr-u-10\/10\@max-lg {
     width: 100% !important; } }
 
+
+/*# sourceMappingURL=styles.css.map*/
