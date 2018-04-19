@@ -5,7 +5,7 @@ import Experiences from '..'
 
 describe('components/organisms/experiences', () => {
     it('should render Experiences', () => {
-        const values = [
+        const experiences = [
             {
                 timeframe: 'Month 20XX - Month 20XX'
             },
@@ -14,7 +14,7 @@ describe('components/organisms/experiences', () => {
             }
         ]
 
-        const $ = mount(<Experiences values={values}/>)
+        const $ = mount(<Experiences title='Work Experience' experiences={experiences}/>)
 
         expect($.find('Experience').length).toEqual(2);
     })

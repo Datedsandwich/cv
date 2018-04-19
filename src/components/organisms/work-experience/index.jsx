@@ -1,6 +1,6 @@
 import React from 'react';
 
-import ExperiencePanel from 'components/molecules/experience-panel';
+import Experiences from 'components/organisms/experiences';
 
 class WorkExperience extends React.Component {
     constructor(props) {
@@ -31,7 +31,7 @@ class WorkExperience extends React.Component {
     render() {
         return (
             <div id='experience'>
-                <ExperiencePanel title='Work Experience' experiences={this.state.experiences}/>
+                <Experiences title='Work Experience' experiences={this.state.experiences}/>
             </div>
         )
     }
