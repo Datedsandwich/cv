@@ -599,9 +599,6 @@ h6 {
 .lr-c-card--no-padding {
   padding: 0; }
 
-.lr-c-card--borderless {
-  border: 0; }
-
 .lr-c-experience__left {
   padding-right: 1rem;
   text-align: end; }
