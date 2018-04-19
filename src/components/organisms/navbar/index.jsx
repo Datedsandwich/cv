@@ -38,7 +38,7 @@ class Navbar extends React.Component {
                                 <a className='lr-c-navbar__item' href='#experience' onClick={this.close}>Experience</a>
                                 <a className='lr-c-navbar__item' href='#education' onClick={this.close}>Education</a>
                                 <a className='lr-c-navbar__item' href='#skills' onClick={this.close}>Skills</a>
-                                <a className='lr-c-navbar__item' href='#skills' onClick={this.close}>References</a>
+                                <a className='lr-c-navbar__item' href='#projects' onClick={this.close}>Projects</a>
                             </div>
                             <button className='lr-c-navbar__item lr-c-navbar__toggle' onClick={this.toggle}>&#9776;</button>
                         </Flag.Body>

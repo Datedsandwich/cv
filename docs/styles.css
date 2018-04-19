@@ -425,6 +425,9 @@ button {
   border: 0;
   padding: 0; }
 
+a {
+  text-decoration: none; }
+
 body {
   font-size: 1rem;
   font-weight: 400;
@@ -709,6 +712,9 @@ h6 {
 .lr-c-navbar__item:active,
 .lr-c-navbar__toggle:active {
   color: #e6e6e6; }
+
+.lr-c-project:hover {
+  background-color: #e0e0e0; }
 
 .lr-u-fill-height {
   height: 100%; }

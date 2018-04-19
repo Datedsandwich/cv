@@ -10,6 +10,7 @@ import PersonalStatementPanel from 'components/organisms/personal-statement-pane
 import WorkExperience from 'components/organisms/work-experience';
 import Education from 'components/organisms/education';
 import Skills from 'components/organisms/skills'
+import Projects from 'components/organisms/projects'
 
 function Application() {
     return (
@@ -31,6 +32,9 @@ function Application() {
                     </Grid.Item>
                     <Grid.Item>
                         <Skills />
+                    </Grid.Item>
+                    <Grid.Item>
+                        <Projects />
                     </Grid.Item>
                 </Grid.Wrapper>
             </div>
