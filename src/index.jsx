@@ -9,6 +9,7 @@ import ContactInfoPanel from 'components/organisms/contact-info-panel';
 import PersonalStatementPanel from 'components/organisms/personal-statement-panel';
 import WorkExperience from 'components/organisms/work-experience';
 import Education from 'components/organisms/education';
+import Skills from 'components/organisms/skills'
 
 function Application() {
     return (
@@ -27,6 +28,9 @@ function Application() {
                     </Grid.Item>
                     <Grid.Item>
                         <Education />
+                    </Grid.Item>
+                    <Grid.Item>
+                        <Skills />
                     </Grid.Item>
                 </Grid.Wrapper>
             </div>
