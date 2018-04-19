@@ -76,14 +76,14 @@ function Skills() {
                     </p>
                 </Grid.Item>
                 <Grid.Item className='lr-u-1/3@sm lr-u-1/2@max-sm'>
-                    <h4 className="lr-u-text-align-center">jQuery</h4>
+                    <h4 className="lr-u-text-align-center">jQuery - Proficient</h4>
                     <p>
                         Primarily used alongside AngularJS for testing purposes, and for one project at
                         BlackCat which wasn't using a more feature rich framework.
                     </p>
                 </Grid.Item>
                 <Grid.Item className='lr-u-1/3@sm lr-u-1/2@max-sm'>
-                    <h4 className="lr-u-text-align-center">Java</h4>
+                    <h4 className="lr-u-text-align-center">Java - Proficient</h4>
                     <p>
                         I used Java for a couple of assignments at University, and also for almost 2
                         years at BlackCat for the back end of a couple of projects. Specifically Java 8,
@@ -91,7 +91,7 @@ function Skills() {
                     </p>
                 </Grid.Item>
                 <Grid.Item className='lr-u-1/3@sm lr-u-1/2@max-sm'>
-                    <h4 className="lr-u-text-align-center">Dropwizard</h4>
+                    <h4 className="lr-u-text-align-center">Dropwizard - Proficient</h4>
                     <p>
                         Used on a project at BlackCat for almost 2 years, providing the HTTP backend for
                         a web app. It's a bit more light weight than Spring, and provides some useful
@@ -99,14 +99,14 @@ function Skills() {
                     </p>
                 </Grid.Item>
                 <Grid.Item className='lr-u-1/3@sm lr-u-1/2@max-sm'>
-                    <h4 className="lr-u-text-align-center">Hibernate</h4>
+                    <h4 className="lr-u-text-align-center">Hibernate - Proficient</h4>
                     <p>
                         Used as the ORM for a project at BlackCat for almost 2 years. It's a powerful
                         tool, but it has some limitations in it's own query language, HQL.
                     </p>
                 </Grid.Item>
                 <Grid.Item className='lr-u-1/3@sm lr-u-1/2@max-sm'>
-                    <h4 className="lr-u-text-align-center">SQL</h4>
+                    <h4 className="lr-u-text-align-center">SQL - Proficient</h4>
                     <p>
                         Sometimes, an ORM can't quite do something you need it to, which is when you
                         have to crack out SQL. It's also how we wrote database migrations!
