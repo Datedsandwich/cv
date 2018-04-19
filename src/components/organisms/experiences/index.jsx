@@ -1,7 +1,8 @@
-import React from 'react';
+import React from 'react'
+import T from 'prop-types'
 
-import Card from 'components/atoms/card';
-import Grid from 'components/layout/grid';
+import Card from 'components/atoms/card'
+import Grid from 'components/layout/grid'
 
 import Experience from 'components/molecules/experience'
 
@@ -30,6 +31,14 @@ function Experiences(props) {
             </Grid.Wrapper>
         </Card>
     )
+}
+
+Experiences.propTypes = {
+    title: T.string.isRequired,
+    experiences: T.arrayOf(T.shape({
+        ...Experience.propTypes,
+        key: T.number.isRequired
+    }))
 }
 
 export default Experiences;

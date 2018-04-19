@@ -14,7 +14,7 @@ describe('components/organisms/experiences', () => {
             }
         ]
 
-        const $ = mount(<Experiences experiences={experiences}/>)
+        const $ = mount(<Experiences title='Work Experience' experiences={experiences}/>)
 
         expect($.find('Experience').length).toEqual(2);
     })
