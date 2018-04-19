@@ -6,7 +6,7 @@ import Card from 'components/atoms/card';
 import Grid from 'components/layout/grid';
 import Navbar from 'components/organisms/navbar';
 import ContactInfoPanel from 'components/organisms/contact-info-panel';
-import PersonalStatementPanel from 'components/organisms/personal-statement-panel';
+import PersonalStatement from 'components/organisms/personal-statement';
 import WorkExperience from 'components/organisms/work-experience';
 import Education from 'components/organisms/education';
 import Skills from 'components/organisms/skills'
@@ -22,7 +22,7 @@ function Application() {
                         <ContactInfoPanel/>
                     </Grid.Item>
                     <Grid.Item>
-                        <PersonalStatementPanel/>
+                        <PersonalStatement/>
                     </Grid.Item>
                     <Grid.Item>
                         <WorkExperience/>

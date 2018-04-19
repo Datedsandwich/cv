@@ -596,15 +596,11 @@ h6 {
   background-color: #d3d3d3;
   color: #343a40; }
 
-.lr-c-contact-info-panel {
-  display: flex;
-  height: 100%;
-  flex-direction: column;
-  justify-content: space-between;
-  align-content: flex-start; }
+.lr-c-card--no-padding {
+  padding: 0; }
 
-.lr-c-contact-info-panel__social-media-buttons {
-  align-self: center; }
+.lr-c-card--borderless {
+  border: 0; }
 
 .lr-c-experience__left {
   padding-right: 1rem;
@@ -715,6 +711,27 @@ h6 {
 
 .lr-c-project:hover {
   background-color: #e0e0e0; }
+
+.lr-c-section {
+  margin: 0 auto; }
+
+.lr-c-section__content {
+  padding: 1rem; }
+
+.lr-c-section__title {
+  width: 100%;
+  margin-bottom: 1rem;
+  border-top: 1px solid #cccccc;
+  border-bottom: 1px solid #cccccc;
+  text-align: center; }
+
+.lr-c-social-media-panel {
+  display: flex;
+  height: 100%;
+  flex-direction: column; }
+
+.lr-c-social-media-panel__social-media-buttons {
+  align-self: center; }
 
 .lr-u-fill-height {
   height: 100%; }

@@ -1,0 +1,16 @@
+.lr-c-section {
+    margin: 0 auto;
+}
+
+.lr-c-section__content {
+    padding: $lr-spacing-unit;
+}
+
+.lr-c-section__title {
+    width: 100%;
+    margin-bottom: $lr-spacing-unit;
+    border-top: 1px solid darken($color-light, 20%);
+    border-bottom: 1px solid darken($color-light, 20%);
+
+    text-align: center;
+}

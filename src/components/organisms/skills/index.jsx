@@ -1,15 +1,12 @@
 import React from 'react';
 
-import Card from 'components/atoms/card';
+import Section from 'components/atoms/section';
 import Grid from 'components/layout/grid';
 
 function Skills() {
     return (
-        <Card className='lr-c-card--grey'>
+        <Section title='Skills'>
             <Grid.Wrapper className='lr-o-grid--spaced'>
-                <Grid.Item>
-                    <h1 id='skills' className="lr-u-text-align-center">Skills</h1>
-                </Grid.Item>
                 <Grid.Item className='lr-u-1/2@sm'>
                     <h4 className="lr-u-text-align-center">C# - Proficient</h4>
                     <p>
@@ -113,7 +110,7 @@ function Skills() {
                     </p>
                 </Grid.Item>
             </Grid.Wrapper>
-        </Card>
+        </Section>
     )
 }
 

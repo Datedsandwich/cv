@@ -2,6 +2,7 @@ import React from 'react';
 
 import Grid from 'components/layout/grid';
 import Project from 'components/molecules/project'
+import Section from 'components/atoms/section'
 
 import Photo from '../../../assets/images/horse_mask.jpg'
 import BipImage from '../../../assets/images/Bip.png'
@@ -116,12 +117,11 @@ class Projects extends React.Component {
             });
 
         return (
-            <Grid.Wrapper className='lr-o-grid--spaced'>
-                <Grid.Item>
-                    <h1 id='projects' className='lr-u-text-align-center'>Projects</h1>
-                </Grid.Item>
-                {projects}
-            </Grid.Wrapper>
+            <Section title='Projects'>
+                <Grid.Wrapper className='lr-o-grid--spaced'>
+                    {projects}
+                </Grid.Wrapper>
+            </Section>
         )
     }
 }

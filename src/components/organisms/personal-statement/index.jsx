@@ -1,11 +1,10 @@
 import React from 'react';
 
-import Card from 'components/atoms/card';
+import Section from 'components/atoms/Section';
 
-function PersonalStatementPanel() {
+function PersonalStatement() {
     return (
-        <Card className="lr-c-card--grey">
-            <h1 className="lr-u-text-align-center">Hello!</h1>
+        <Section title='Hello!'>
             <p className="lr-u-soft-bottom">
                 I am a Software Developer and Game Developer. I've worked as a Gameplay
                 Programmer, and also as a Full Stack Web Developer. I've used C#, Java, and
@@ -20,8 +19,8 @@ function PersonalStatementPanel() {
                 I've also got some interest in web, as you can see by looking at this page! It's
                 responsive, too!
             </p>
-        </Card>
+        </Section>
     )
 }
 
-export default PersonalStatementPanel;
+export default PersonalStatement;
