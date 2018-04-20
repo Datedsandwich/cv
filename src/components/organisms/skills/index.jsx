@@ -1,11 +1,12 @@
 import React from 'react';
 
-import Section from 'components/atoms/section';
-import Grid from 'components/layout/grid';
+import Card from 'components/atoms/card'
+import Grid from 'components/layout/grid'
+import Section from 'components/atoms/section'
 
 class Skills extends React.Component {
     constructor(props) {
-        super(props);
+        super(props)
 
         this.state = {
             skills: [
@@ -81,10 +82,12 @@ class Skills extends React.Component {
             .map((skill) => {
                 return (
                     <Grid.Item className='lr-u-1/2@sm'>
-                        <h4 className="lr-u-text-align-center">{skill.name}</h4>
-                        <p>
-                            {skill.text}
-                        </p>
+                        <Card className='lr-c-card--grey lr-u-fill-width'>
+                            <h4 className="lr-u-text-align-center">{skill.name}</h4>
+                            <p>
+                                {skill.text}
+                            </p>
+                        </Card>
                     </Grid.Item>
                 )
             })
@@ -92,7 +95,7 @@ class Skills extends React.Component {
         return (
             <div id='skills'>
                 <Section title='Skills'>
-                    <Grid.Wrapper className='lr-o-grid--spaced'>
+                    <Grid.Wrapper className='lr-o-grid--spaced lr-o-grid--match-height'>
                         {skills}
                     </Grid.Wrapper>
                 </Section>
