@@ -47,6 +47,11 @@ class Navbar extends React.Component {
                                 <Anchor
                                     className='lr-c-navbar__item'
                                     offset={this.state.navbarHeight}
+                                    href='#contact-info'
+                                    onClick={this.close}>Contact Info</Anchor>
+                                <Anchor
+                                    className='lr-c-navbar__item'
+                                    offset={this.state.navbarHeight}
                                     href='#experience'
                                     onClick={this.close}>Experience</Anchor>
                                 <Anchor
