@@ -1,14 +1,16 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-import Flag from 'components/layout/flag';
+import Flag from 'components/layout/flag'
+import Anchor from 'components/atoms/anchor'
 
 class Navbar extends React.Component {
     constructor(props) {
-        super(props);
+        super(props)
 
         this.state = {
-            isOpen: false
+            isOpen: false,
+            navbarHeight: 70
         }
 
         this.toggle = () => {
@@ -24,21 +26,44 @@ class Navbar extends React.Component {
 
     render() {
         return (
-            <nav className={`lr-c-navbar lr-u-hard-bottom ${this.state.isOpen ? 'is-open' : ''}`}>
+            <nav
+                className={`lr-c-navbar lr-u-hard-bottom ${this.state.isOpen
+                ? 'is-open'
+                : ''}`}>
                 <div className='lr-c-navbar__inner'>
                     <button className='lr-c-navbar__overlay' onClick={this.close}></button>
                     <Flag.Wrapper className='lr-u-fill-height'>
                         <Flag.Component>
                             <div className='lr-c-navbar__brand'>
-                                <span className='lr-c-navbar__item'>Luke Robinson</span>
+                                <Anchor
+                                    className='lr-c-navbar__item'
+                                    offset={this.state.navbarHeight}
+                                    href='#contact-info'
+                                    onClick={this.close}>Luke Robinson</Anchor>
                             </div>
                         </Flag.Component>
                         <Flag.Body>
                             <div className='lr-c-navbar__links'>
-                                <a className='lr-c-navbar__item' href='#experience' onClick={this.close}>Experience</a>
-                                <a className='lr-c-navbar__item' href='#education' onClick={this.close}>Education</a>
-                                <a className='lr-c-navbar__item' href='#skills' onClick={this.close}>Skills</a>
-                                <a className='lr-c-navbar__item' href='#projects' onClick={this.close}>Projects</a>
+                                <Anchor
+                                    className='lr-c-navbar__item'
+                                    offset={this.state.navbarHeight}
+                                    href='#experience'
+                                    onClick={this.close}>Experience</Anchor>
+                                <Anchor
+                                    className='lr-c-navbar__item'
+                                    offset={this.state.navbarHeight}
+                                    href='#education'
+                                    onClick={this.close}>Education</Anchor>
+                                <Anchor
+                                    className='lr-c-navbar__item'
+                                    offset={this.state.navbarHeight}
+                                    href='#skills'
+                                    onClick={this.close}>Skills</Anchor>
+                                <Anchor
+                                    className='lr-c-navbar__item'
+                                    offset={this.state.navbarHeight}
+                                    href='#projects'
+                                    onClick={this.close}>Projects</Anchor>
                             </div>
                             <button className='lr-c-navbar__item lr-c-navbar__toggle' onClick={this.toggle}>&#9776;</button>
                         </Flag.Body>

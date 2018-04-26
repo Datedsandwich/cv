@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Section from 'components/atoms/Section';
+import Section from 'components/atoms/section';
 
 function PersonalStatement() {
     return (

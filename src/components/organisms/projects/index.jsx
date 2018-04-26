@@ -117,13 +117,11 @@ class Projects extends React.Component {
             });
 
         return (
-            <div id='projects'>
-                <Section title='Projects'>
-                    <Grid.Wrapper className='lr-o-grid--spaced'>
-                        {projects}
-                    </Grid.Wrapper>
-                </Section>
-            </div>
+            <Section title='Projects'>
+                <Grid.Wrapper className='lr-o-grid--spaced'>
+                    {projects}
+                </Grid.Wrapper>
+            </Section>
         )
     }
 }

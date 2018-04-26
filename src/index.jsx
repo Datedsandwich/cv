@@ -18,22 +18,22 @@ function Application() {
             <Navbar/>
             <div className='lr-o-site-wrap'>
                 <Grid.Wrapper className='lr-o-grid--spaced'>
-                    <Grid.Item>
+                    <Grid.Item id='contact-info'>
                         <ContactInfoPanel/>
                     </Grid.Item>
                     <Grid.Item>
                         <PersonalStatement/>
                     </Grid.Item>
-                    <Grid.Item>
+                    <Grid.Item id='experience'>
                         <WorkExperience/>
                     </Grid.Item>
-                    <Grid.Item>
+                    <Grid.Item id='education'>
                         <Education />
                     </Grid.Item>
-                    <Grid.Item>
+                    <Grid.Item id='skills'>
                         <Skills />
                     </Grid.Item>
-                    <Grid.Item>
+                    <Grid.Item id='projects'>
                         <Projects />
                     </Grid.Item>
                 </Grid.Wrapper>

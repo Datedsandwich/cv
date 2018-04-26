@@ -1,7 +1,7 @@
 import React from 'react'
 import T from 'prop-types'
 
-const Item = ({children, className}) => <div className={`lr-o-grid__item ${className}`}>
+const Item = ({children, className, id}) => <div className={`lr-o-grid__item ${className}`} id={id}>
     {children}
 </div>
 

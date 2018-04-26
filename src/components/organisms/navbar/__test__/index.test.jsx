@@ -38,7 +38,7 @@ describe('components/navbar', () => {
   it('should close the navbar overlay when a link is clicked', () => {
     const $ = shallow(<Navbar />)
     $.find(".lr-c-navbar__toggle").simulate('click')
-    $.find("a").at(0).simulate('click')
+    $.find("Anchor").at(0).simulate('click')
 
     expect($.hasClass('is-open')).toBe(false)
   })

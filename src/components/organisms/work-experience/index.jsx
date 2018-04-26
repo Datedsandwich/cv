@@ -29,11 +29,7 @@ class WorkExperience extends React.Component {
     }
 
     render() {
-        return (
-            <div id='experience'>
-                <Experiences title='Work Experience' experiences={this.state.experiences}/>
-            </div>
-        )
+        return <Experiences title='Work Experience' experiences={this.state.experiences}/>
     }
 }
 

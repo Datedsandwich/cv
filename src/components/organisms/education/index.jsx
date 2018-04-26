@@ -41,11 +41,7 @@ class Education extends React.Component {
     }
 
     render() {
-        return (
-            <div id='education'>
-                <Experiences title='Education' experiences={this.state.experiences}/>
-            </div>
-        )
+        return <Experiences title='Education' experiences={this.state.experiences}/>
     }
 }
 
