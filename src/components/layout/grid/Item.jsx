@@ -1,18 +1,20 @@
 import React from 'react'
 import T from 'prop-types'
 
-const Item = ({children, className, id}) => <div className={`lr-o-grid__item ${className}`} id={id}>
+const Item = ({ children, className, id }) => (
+  <div className={`lr-o-grid__item ${className}`} id={id}>
     {children}
-</div>
+  </div>
+)
 
 Item.propTypes = {
-    children: T.node,
-    className: T.string
+  children: T.node,
+  className: T.string
 }
 
 Item.defaultProps = {
-    children: null,
-    className: ''
+  children: null,
+  className: ''
 }
 
-export default Item;
+export default Item

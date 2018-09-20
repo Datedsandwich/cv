@@ -1,14 +1,14 @@
-import React from "react";
+import React from 'react'
 
-import Card from "components/atoms/card";
-import Grid from "components/layout/grid";
-import Section from "components/atoms/section";
+import Card from 'components/atoms/card'
+import Grid from 'components/layout/grid'
+import Section from 'components/atoms/section'
 
-import skills from "const/skills";
+import skills from 'const/skills'
 
 class Skills extends React.Component {
   constructor(props) {
-    super(props);
+    super(props)
   }
 
   render() {
@@ -21,8 +21,8 @@ class Skills extends React.Component {
               <p>{skill.text}</p>
             </Card>
           </Grid.Item>
-        );
-      });
+        )
+      })
 
     return (
       <Section title="Skills">
@@ -30,8 +30,8 @@ class Skills extends React.Component {
           {renderSkills()}
         </Grid.Wrapper>
       </Section>
-    );
+    )
   }
 }
 
-export default Skills;
+export default Skills
