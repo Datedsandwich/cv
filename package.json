@@ -8,7 +8,7 @@
     "test-watch": "jest --watch",
     "coverage": "jest --coverage",
     "format": "prettier --write 'src/**/*.jsx'",
-    "precommit": "yarn format && yarn test && yarn build"
+    "precommit": "yarn format && yarn test"
   },
   "dependencies": {
     "babel-plugin-transform-object-rest-spread": "^6.26.0",

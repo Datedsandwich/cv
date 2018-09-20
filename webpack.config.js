@@ -58,6 +58,12 @@ module.exports = {
           name: 'vendor',
           test: /node_modules/,
           enforce: true
+        },
+        styles: {
+          name: 'styles',
+          test: /\.(s*)css$/,
+          chunks: 'all',
+          enforce: true
         }
       }
     },
