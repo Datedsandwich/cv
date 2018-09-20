@@ -3,12 +3,12 @@ import { shallow } from 'enzyme'
 
 import Grid from '..'
 
-describe('components/Grid.Wrapper', () => {
-  it('should render a grid', () => {
+describe('components/Grid.Wrapper.Wrapper', () => {
+  it('should render a Grid.Wrapper', () => {
     const $ = shallow(
-      <Grid>
+      <Grid.Wrapper>
         <span />
-      </Grid>
+      </Grid.Wrapper>
     )
 
     expect($.hasClass('lr-o-grid')).toBe(true)
@@ -16,29 +16,19 @@ describe('components/Grid.Wrapper', () => {
 
   it('should render its children', () => {
     const $ = shallow(
-      <Grid>
+      <Grid.Wrapper>
         <span />
-      </Grid>
+      </Grid.Wrapper>
     )
 
     expect($.find('span').exists()).toBe(true)
   })
 
-  it('should wrap its children in GridItems', () => {
-    const $ = shallow(
-      <Grid>
-        <span />
-      </Grid>
-    )
-
-    expect($.find('GridItem').exists()).toBe(true)
-  })
-
   it('should apply css classes', () => {
     const $ = shallow(
-      <Grid className="test">
+      <Grid.Wrapper className="test">
         <span />
-      </Grid>
+      </Grid.Wrapper>
     )
 
     expect($.hasClass('test')).toBe(true)
