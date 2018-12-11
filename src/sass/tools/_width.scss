@@ -1,7 +1,0 @@
-@mixin lr-generate-width-fraction-classes($denominator, $extension: '') {
-    @for $numerator from 1 through $denominator {
-        .lr-u-#{$numerator}\/#{$denominator}#{$extension} {
-            width: $numerator / $denominator * 100% !important;
-        }
-    }
-}
