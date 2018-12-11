@@ -8,11 +8,19 @@
     "test-watch": "jest --watch",
     "coverage": "jest --coverage",
     "format": "prettier --write 'src/**/*.jsx'",
-    "precommit": "yarn format && yarn test"
+    "precommit": "lint-staged"
+  },
+  "lint-staged": {
+    "*.jsx": [
+      "prettier --write",
+      "jest",
+      "git add"
+    ]
   },
   "dependencies": {
     "babel-plugin-transform-object-rest-spread": "^6.26.0",
     "file-loader": "^1.1.11",
+    "lint-staged": "^8.1.0",
     "optimize-css-assets-webpack-plugin": "^5.0.1",
     "prop-types": "^15.6.1",
     "react": "^16.2.0",
