@@ -2,17 +2,18 @@ import React from 'react'
 import { render } from 'react-dom'
 import 'sass/main.scss'
 
-import Card from 'components/atoms/card'
+import Card from 'components/generic/card'
 import Grid from 'components/layout/grid'
-import Navbar from 'components/organisms/navbar'
-import ContactInfoPanel from 'components/organisms/contact-info-panel'
-import PersonalStatement from 'components/organisms/personal-statement'
-import WorkExperience from 'components/organisms/work-experience'
-import Education from 'components/organisms/education'
-import Skills from 'components/organisms/skills'
-import Projects from 'components/organisms/projects'
+import Navbar from 'components/navbar'
+import { ContactInfoPanel } from 'sections/contact-info-panel'
+import { PersonalStatement } from 'sections/personal-statement'
+import { Skills } from 'sections/skills'
+import { Projects } from 'sections/projects'
+import { Experiences } from 'sections/experiences'
 
-function Application() {
+import { education, workExperience } from 'const'
+
+const Application = () => {
   return (
     <div>
       <Navbar />
@@ -25,10 +26,10 @@ function Application() {
             <PersonalStatement />
           </Grid.Item>
           <Grid.Item id="experience">
-            <WorkExperience />
+            <Experiences title="Work Experience" experiences={workExperience} />
           </Grid.Item>
           <Grid.Item id="education">
-            <Education />
+            <Experiences title="Education" experiences={education} />
           </Grid.Item>
           <Grid.Item id="skills">
             <Skills />
