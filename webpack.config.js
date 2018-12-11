@@ -1,19 +1,20 @@
 const path = require('path')
-const HtmlWebPackPlugin = require('html-webpack-plugin')
+const HtmlWebpackPlugin = require('html-webpack-plugin')
 const HtmlWebpackHarddiskPlugin = require('html-webpack-harddisk-plugin')
 const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin')
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
+const CopyWebpackPlugin = require('copy-webpack-plugin')
 
-module.exports = {
+module.exports = (env, args) => ({
   entry: ['./src/index.jsx'],
   output: {
-    path: path.resolve(__dirname, 'docs'),
+    path: path.resolve(__dirname, 'dist'),
     filename: '[name].js'
   },
   devtool: 'source-map',
   devServer: {
-    contentBase: './docs'
+    contentBase: './'
   },
   resolve: {
     modules: ['src', 'node_modules'],
@@ -46,7 +47,7 @@ module.exports = {
       {
         test: /\.(jpe?g|png|gif)$/i,
         exclude: /node_modules/,
-        loader: 'file-loader?name=[name].[hash].[ext]'
+        loader: 'file-loader?name=assets/images/[name].[hash].[ext]'
       }
     ]
   },
@@ -58,12 +59,6 @@ module.exports = {
           name: 'vendor',
           test: /node_modules/,
           enforce: true
-        },
-        styles: {
-          name: 'styles',
-          test: /\.(s*)css$/,
-          chunks: 'all',
-          enforce: true
         }
       }
     },
@@ -71,17 +66,18 @@ module.exports = {
       new UglifyJsPlugin({
         cache: true,
         parallel: true,
-        sourceMap: true // set to true if you want JS source maps
+        sourceMap: args.mode !== 'production'
       }),
       new OptimizeCSSAssetsPlugin({})
     ]
   },
   plugins: [
     new MiniCssExtractPlugin({ filename: '[name].css' }),
-    new HtmlWebPackPlugin({
+    new HtmlWebpackPlugin({
+      filename: './index.html',
       template: './src/index.html',
       alwaysWriteToDisk: true
     }),
     new HtmlWebpackHarddiskPlugin()
   ]
-}
+})

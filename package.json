@@ -8,7 +8,8 @@
     "test-watch": "jest --watch",
     "coverage": "jest --coverage",
     "format": "prettier --write 'src/**/*.jsx'",
-    "precommit": "lint-staged && jest"
+    "precommit": "lint-staged && jest",
+    "deploy": "git push origin --delete gh-pages && git subtree push --prefix dist origin gh-pages"
   },
   "lint-staged": {
     "*.jsx": [
