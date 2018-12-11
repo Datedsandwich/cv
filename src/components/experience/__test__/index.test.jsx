@@ -3,7 +3,7 @@ import { mount } from 'enzyme'
 
 import Experience from '..'
 
-describe('components/molecules/experience', () => {
+describe('components/experience', () => {
   it('should display correct information', () => {
     const timeframe = 'August 2016 - February 2018'
     const title = 'BlackCat Technology Solutions'

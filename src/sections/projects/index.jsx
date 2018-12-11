@@ -1,14 +1,14 @@
 import React from 'react'
 
 import Grid from 'components/layout/grid'
-import Project from 'components/molecules/project'
+import Project from 'components/project'
 import Section from 'components/generic/section'
 
-import Photo from '../../../assets/images/horse_mask.jpg'
-import BipImage from '../../../assets/images/Bip.png'
-import CholeraOutbreakImage from '../../../assets/images/cholera-outbreak.png'
-import LightbringerImage from '../../../assets/images/lightbringer.png'
-import ColorPsychologyImage from '../../../assets/images/color-psychology.png'
+import Photo from 'assets/images/horse_mask.jpg'
+import BipImage from 'assets/images/Bip.png'
+import CholeraOutbreakImage from 'assets/images/cholera-outbreak.png'
+import LightbringerImage from 'assets/images/lightbringer.png'
+import ColorPsychologyImage from 'assets/images/color-psychology.png'
 
 class Projects extends React.Component {
   constructor(props) {

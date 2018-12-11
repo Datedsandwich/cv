@@ -5,12 +5,12 @@ import 'sass/main.scss'
 import Card from 'components/generic/card'
 import Grid from 'components/layout/grid'
 import Navbar from 'components/navbar'
-import ContactInfoPanel from 'components/sections/contact-info-panel'
-import PersonalStatement from 'components/sections/personal-statement'
-import WorkExperience from 'components/sections/work-experience'
-import Education from 'components/sections/education'
-import Skills from 'components/sections/skills'
-import Projects from 'components/sections/projects'
+import ContactInfoPanel from 'sections/contact-info-panel'
+import PersonalStatement from 'sections/personal-statement'
+import WorkExperience from 'sections/work-experience'
+import Education from 'sections/education'
+import Skills from 'sections/skills'
+import Projects from 'sections/projects'
 
 function Application() {
   return (

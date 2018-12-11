@@ -3,7 +3,7 @@ import T from 'prop-types'
 
 import Section from 'components/generic/section'
 
-import Experience from 'components/molecules/experience'
+import Experience from 'components/experience'
 
 function Experiences(props) {
   const experiences = props.experiences.map(value => {

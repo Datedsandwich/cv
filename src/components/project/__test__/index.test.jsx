@@ -3,7 +3,7 @@ import { mount } from 'enzyme'
 
 import Project from '..'
 
-describe('components/molecules/project', () => {
+describe('components/project', () => {
   it('should display correct information', () => {
     const link = 'https://datedsandwich.github.io/cv/'
     const image = '/an-image'
