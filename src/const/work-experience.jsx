@@ -1,4 +1,4 @@
-export const workExperiences = [
+export const workExperience = [
   {
     key: 1,
     timeframe: 'August 2016 - March 2018',

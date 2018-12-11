@@ -5,16 +5,15 @@ import 'sass/main.scss'
 import Card from 'components/generic/card'
 import Grid from 'components/layout/grid'
 import Navbar from 'components/navbar'
-import ContactInfoPanel from 'sections/contact-info-panel'
-import PersonalStatement from 'sections/personal-statement'
-import Skills from 'sections/skills'
-import Projects from 'sections/projects'
-import Experiences from 'sections/experiences'
+import { ContactInfoPanel } from 'sections/contact-info-panel'
+import { PersonalStatement } from 'sections/personal-statement'
+import { Skills } from 'sections/skills'
+import { Projects } from 'sections/projects'
+import { Experiences } from 'sections/experiences'
 
-import { education } from 'const/education'
-import { workExperiences } from 'const/work-experience'
+import { education, workExperience } from 'const'
 
-function Application() {
+const Application = () => {
   return (
     <div>
       <Navbar />
@@ -27,10 +26,7 @@ function Application() {
             <PersonalStatement />
           </Grid.Item>
           <Grid.Item id="experience">
-            <Experiences
-              title="Work Experience"
-              experiences={workExperiences}
-            />
+            <Experiences title="Work Experience" experiences={workExperience} />
           </Grid.Item>
           <Grid.Item id="education">
             <Experiences title="Education" experiences={education} />

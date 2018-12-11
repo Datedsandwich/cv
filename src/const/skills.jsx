@@ -1,4 +1,4 @@
-export default [
+export const skills = [
   {
     name: 'JavaScript',
     text: `Used for a couple of years now, including at BlackCat for front-end on a couple

@@ -3,11 +3,11 @@ import T from 'prop-types'
 
 import Section from 'components/generic/section'
 
-import Experience from 'components/experience'
+import { Experience } from 'components/experience'
 
-function Experiences(props) {
-  const experiences = props.experiences.map(value => {
-    return (
+const Experiences = props => (
+  <Section title={props.title}>
+    {props.experiences.map(value => (
       <div className="lr-u-soft-bottom" key={value.key}>
         <Experience
           timeframe={value.timeframe}
@@ -16,11 +16,9 @@ function Experiences(props) {
           body={value.body}
         />
       </div>
-    )
-  })
-
-  return <Section title={props.title}>{experiences}</Section>
-}
+    ))}
+  </Section>
+)
 
 Experiences.propTypes = {
   title: T.string.isRequired,
@@ -32,4 +30,4 @@ Experiences.propTypes = {
   )
 }
 
-export default Experiences
+export { Experiences }

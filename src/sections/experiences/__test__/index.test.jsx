@@ -1,7 +1,7 @@
 import React from 'react'
 import { mount } from 'enzyme'
 
-import Experiences from '..'
+import { Experiences } from '..'
 
 describe('components/sections/experiences', () => {
   it('should render Experiences', () => {
