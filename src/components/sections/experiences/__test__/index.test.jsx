@@ -3,7 +3,7 @@ import { mount } from 'enzyme'
 
 import Experiences from '..'
 
-describe('components/organisms/experiences', () => {
+describe('components/sections/experiences', () => {
   it('should render Experiences', () => {
     const experiences = [
       {

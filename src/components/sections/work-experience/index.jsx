@@ -1,6 +1,6 @@
 import React from 'react'
 
-import Experiences from 'components/organisms/experiences'
+import Experiences from 'components/sections/experiences'
 
 class WorkExperience extends React.Component {
   constructor(props) {

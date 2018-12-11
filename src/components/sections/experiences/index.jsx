@@ -1,7 +1,7 @@
 import React from 'react'
 import T from 'prop-types'
 
-import Section from 'components/atoms/section'
+import Section from 'components/generic/section'
 
 import Experience from 'components/molecules/experience'
 

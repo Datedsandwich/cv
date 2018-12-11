@@ -3,7 +3,7 @@ import { shallow } from 'enzyme'
 
 import Education from '..'
 
-describe('components/organisms/education', () => {
+describe('components/sections/education', () => {
   it('should render panel without crashing', () => {
     const $ = shallow(<Education />)
   })

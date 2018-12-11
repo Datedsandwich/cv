@@ -3,7 +3,7 @@ import { shallow } from 'enzyme'
 
 import PersonalStatement from '..'
 
-describe('components/organisms/personal-statement', () => {
+describe('components/sections/personal-statement', () => {
   it('should render without crashing', () => {
     const $ = shallow(<PersonalStatement />)
   })

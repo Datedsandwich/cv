@@ -1,7 +1,7 @@
 import React from 'react'
 import T from 'prop-types'
 
-import Card from 'components/atoms/card'
+import Card from 'components/generic/card'
 import Grid from 'components/layout/grid'
 
 const Project = ({ link, image, title, body }) => {

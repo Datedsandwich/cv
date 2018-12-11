@@ -2,7 +2,7 @@ import React from 'react'
 
 import Grid from 'components/layout/grid'
 import Project from 'components/molecules/project'
-import Section from 'components/atoms/section'
+import Section from 'components/generic/section'
 
 import Photo from '../../../assets/images/horse_mask.jpg'
 import BipImage from '../../../assets/images/Bip.png'

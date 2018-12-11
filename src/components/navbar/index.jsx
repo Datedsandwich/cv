@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 import Flag from 'components/layout/flag'
-import Anchor from 'components/atoms/anchor'
+import Anchor from 'components/generic/anchor'
 
 class Navbar extends React.Component {
   constructor(props) {

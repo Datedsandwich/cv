@@ -1,10 +1,10 @@
 import React from 'react'
 import { shallow } from 'enzyme'
 
-import Projects from '..'
+import Skills from '..'
 
-describe('components/organisms/projects', () => {
+describe('components/sections/skills', () => {
   it('should render panel without crashing', () => {
-    const $ = shallow(<Projects />)
+    const $ = shallow(<Skills />)
   })
 })

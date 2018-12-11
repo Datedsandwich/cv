@@ -1,6 +1,6 @@
 import React from 'react'
 
-import Card from 'components/atoms/card'
+import Card from 'components/generic/card'
 import Grid from 'components/layout/grid'
 import photo from '../../../assets/images/horse_mask.jpg'
 
