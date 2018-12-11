@@ -4,7 +4,6 @@ const HtmlWebpackHarddiskPlugin = require('html-webpack-harddisk-plugin')
 const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin')
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
-const CopyWebpackPlugin = require('copy-webpack-plugin')
 
 module.exports = (env, args) => ({
   entry: ['./src/index.jsx'],
