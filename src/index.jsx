@@ -7,10 +7,12 @@ import Grid from 'components/layout/grid'
 import Navbar from 'components/navbar'
 import ContactInfoPanel from 'sections/contact-info-panel'
 import PersonalStatement from 'sections/personal-statement'
-import WorkExperience from 'sections/work-experience'
-import Education from 'sections/education'
 import Skills from 'sections/skills'
 import Projects from 'sections/projects'
+import Experiences from 'sections/experiences'
+
+import { education } from 'const/education'
+import { workExperiences } from 'const/work-experience'
 
 function Application() {
   return (
@@ -25,10 +27,13 @@ function Application() {
             <PersonalStatement />
           </Grid.Item>
           <Grid.Item id="experience">
-            <WorkExperience />
+            <Experiences
+              title="Work Experience"
+              experiences={workExperiences}
+            />
           </Grid.Item>
           <Grid.Item id="education">
-            <Education />
+            <Experiences title="Education" experiences={education} />
           </Grid.Item>
           <Grid.Item id="skills">
             <Skills />

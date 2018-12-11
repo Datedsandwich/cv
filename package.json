@@ -8,12 +8,11 @@
     "test-watch": "jest --watch",
     "coverage": "jest --coverage",
     "format": "prettier --write 'src/**/*.jsx'",
-    "precommit": "lint-staged"
+    "precommit": "lint-staged && jest"
   },
   "lint-staged": {
     "*.jsx": [
       "prettier --write",
-      "jest",
       "git add"
     ]
   },
